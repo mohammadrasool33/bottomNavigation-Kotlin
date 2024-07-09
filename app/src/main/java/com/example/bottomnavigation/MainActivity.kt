@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
              true
 
         }
+        bottomNavigationView.getOrCreateBadge(R.id.message).apply {
+            number=10
+        }
     }
     private fun setCurrentFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction().apply {
